@@ -247,7 +247,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 ## Credits
 
-- [Aaron Katema](https://github.com/katema)
+- [Aaron Katema](https://github.com/Aeronk)
 - [All Contributors](../../contributors)
 
 ---
