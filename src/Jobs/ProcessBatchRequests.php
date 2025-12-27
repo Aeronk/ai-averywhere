@@ -20,7 +20,7 @@ class ProcessBatchRequests implements ShouldQueue
     public function __construct(
         public array $requests,
         public ?string $driver = null,
-        public ?callable $callback = null
+        public $callback = null
     ) {
     }
 
