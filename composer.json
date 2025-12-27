@@ -1,0 +1,58 @@
+{
+    "name": "katema/laravel-genai",
+    "description": "Drop-in Generative AI for Laravel applications - opinionated, extensible, and production-ready",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "ai",
+        "openai",
+        "claude",
+        "gemini",
+        "generative-ai",
+        "llm"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aaron Katema",
+            "email": "aaronkatema@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/contracts": "^10.0|^11.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0",
+        "mockery/mockery": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Katema\\LaravelGenAI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Katema\\LaravelGenAI\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Katema\\LaravelGenAI\\GenAIServiceProvider"
+            ],
+            "aliases": {
+                "AI": "Katema\\LaravelGenAI\\Facades\\AI"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
